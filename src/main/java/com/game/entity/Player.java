@@ -8,7 +8,7 @@ import java.util.Date;
 @Table(name = "player", schema = "rpg")
 public class Player {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue()
     private Long id;
     @Column(name = "name", nullable = false, length = 12)
     private String name;
